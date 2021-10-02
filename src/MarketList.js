@@ -29,6 +29,7 @@ const MarketList = ({marketables, filt}) => {
               <h2>{ marketable.title }</h2>
               <p> Price: ${marketable.price} </p>
               <p> Category: {marketable.category} </p>
+              <p> Location: {marketable.location} </p>
               <p>Posted by { marketable.author }</p> 
               <img src={marketable.file}></img>
               </Link>

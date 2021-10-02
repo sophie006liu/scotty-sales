@@ -7,6 +7,7 @@ const CreateItem = () => {
     const [price, setPrice] = useState('');
     const [author, setAuthor] = useState('');
     const [file, setFile] = useState('');
+    const [location, setLocation] = useState('');
 
     let history = useHistory();
     let fileReader = new FileReader();
@@ -65,7 +66,7 @@ const CreateItem = () => {
                         <option value="Kitchen">Kitchen</option>
                         <option value="Bedroom">Bedroom</option>
                         <option value="Living Spaces">Living Spaces</option>
-                        <option value="Miscellaneous">iscellaneous</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
                     </select>
                     <br></br>
                 <label>Price:</label>
@@ -74,6 +75,14 @@ const CreateItem = () => {
                     required
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
+                    ></input>
+                    <br></br>
+                <label>Location:</label>
+                    <br></br>
+                    <input
+                    required
+                    value={location}
+                    onChange={(e) => setLocation(e.target.value)}
                     ></input>
                     <br></br>
                 <label>Blog author:</label>
