@@ -3,7 +3,9 @@ import Home from './Home.js';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import CreateItem from './CreateItem.js';
 import MarketDetails from './MarketDetails.js';
+import Items from './Items.js';
 import Confirmation from './Confirmation.js';
+
 
 function App() {
   return (
@@ -12,8 +14,11 @@ function App() {
           <Navbar/> 
           <div className = "content">
             <Switch> 
-              <Route exact path = "/"> 
+              <Route exact path = "/home"> 
                 <Home />
+              </Route>
+              <Route path = "/items"> 
+                <Items />
               </Route>
               <Route path = "/createItem"> 
                 <CreateItem />
