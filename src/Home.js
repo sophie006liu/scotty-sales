@@ -18,10 +18,10 @@ const Home = () => {
             <div class= "container">
               <div class="row">
                 <div class="col-2">
-                  <h1>Sell and buy from <br />CMU students!</h1>
+                  <h1>Sell and buy from CMU students!</h1>
                   <p>
-                    Our website is only accessible for verified Carnegie <br />Mellon
-                    students, so you can shop at ease.
+                    Only verified Carnegie Mellon
+                    students <br />can access our page, so you can shop at ease.
                   </p>
                   <a href="/Items" class="btn">
                     Explore Item Listings &#8594;
