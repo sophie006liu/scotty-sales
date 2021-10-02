@@ -1,11 +1,13 @@
 import { useState } from "react";
-//import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const CreateItem = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
     //const history = useHistory;
+
+    let history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault(); //prevents page from refreshing
@@ -16,7 +18,7 @@ const CreateItem = () => {
             headers : {"Content-Type" : "application/json"},
             body : JSON.stringify(marketable)
         }).then(() => {
-            //history.push('/');
+            history.push('/confirmation');
             console.log("added item")
         })
       }
@@ -51,7 +53,7 @@ const CreateItem = () => {
                 </input>
                 <br></br>
                 <br></br>
-                 <button>Add Blog</button>
+                 <button>Add Listing</button>
             </form>
         </div>
     );

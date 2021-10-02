@@ -3,6 +3,7 @@ import Home from './Home.js';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import CreateItem from './CreateItem.js';
 import MarketDetails from './MarketDetails.js';
+import Confirmation from './Confirmation.js';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
               </Route>
               <Route path = "/marketables/:id"> 
                 <MarketDetails />
+              </Route>
+              <Route path = "/confirmation">
+                <Confirmation />
               </Route>
             </Switch>
           </div>
