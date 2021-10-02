@@ -15,8 +15,9 @@ const Items = () => {
         return (
           <div className = "items">
               {error && <div>{error}</div>}
-              {isPending && <div>Loading...</div>}
-              <h1>All items</h1>
+              
+              <h2 class="title">All Items</h2>
+              
               <select
                   value={filt}
                   onChange={(e) => setFilt((e.target.value))}>
@@ -28,6 +29,7 @@ const Items = () => {
                   <option value="Living Spaces">Category: Living Spaces</option>
                   <option value="Miscellaneous">Category: Miscellaneous</option>
               </select>
+              {isPending && <div>Loading...</div>}
               {marketables && <MarketList marketables = {marketables} filt = {filt}/> }
               </div>
       );

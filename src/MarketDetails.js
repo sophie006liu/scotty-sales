@@ -27,7 +27,7 @@ const MarketDetails = () => {
           <p> Category: {marketable.category} </p>
           <img src={marketable.file}></img>
           <p>Posted by { marketable.author }</p>
-          <button onClick={handleClick}> Purchase this item </button>
+          <button class="btn"  onClick={handleClick}> Purchase this item </button>
         </article>
       )}
         </div>

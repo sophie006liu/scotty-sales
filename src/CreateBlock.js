@@ -31,7 +31,7 @@ const CreateBlock = () => {
 
     return (
         <div className="createItem">
-            <h2>Add a new item</h2>
+            <h2 class="title">Add a new item</h2>
             <form onSubmit={handleSubmit}>
                 <label>School:</label>
                     <br></br>
@@ -79,7 +79,7 @@ const CreateBlock = () => {
                     ></input> 
                 <br></br>
                 <br></br>
-                <button>Add Block</button>
+                <button class="btn" >Add Block</button>
             </form>
         </div>
     );

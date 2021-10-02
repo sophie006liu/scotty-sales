@@ -45,7 +45,7 @@ const CreateItem = () => {
 
     return (
         <div className="createItem">
-            <h2>Add a new item</h2>
+            <h2 class="title">Add a new item</h2>
             <form onSubmit={handleSubmit}>
                 <label>Item name:</label>
                     <br></br>
@@ -87,7 +87,7 @@ const CreateItem = () => {
                 <input type="file" onChange={(e) => {imageUpload(e)}}/>
                 <img src={file}/>
                 <br></br>
-                <button>Add Listing</button>
+                <button class = "btn">Add Listing</button>
             </form>
         </div>
     );

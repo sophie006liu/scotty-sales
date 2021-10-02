@@ -15,10 +15,10 @@ const Confirmation = () => {
         <div className="confirmation">
             <h2>Success! You have added a new listing</h2>
             <div>
-                <button name="addListing" onClick={clickAddItem} >
+                <button class="btn" name="addListing" onClick={clickAddItem} >
                     Make another listing
                 </button>
-                <button name="Home" onClick={clickGoHome}>
+                <button class="btn" name="Home" onClick={clickGoHome}>
                     Home
                 </button>
             </div>

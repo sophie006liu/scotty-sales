@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className = "navbar">
             <Link to ="/Home"><h1> CMU MarketPlace </h1></Link>
             <div className = "links">
-            <Link to = "/BlocksHome"> Blocks </Link>
+            <Link to = "/BlocksHome"> Block Exchange </Link>
             <Link to = "/Items"> Items </Link> 
             <Link to ="/CreateItem">Create Listing</Link>
             <Link to ="/CreateBlock">New Block Listing</Link>

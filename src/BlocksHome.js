@@ -10,12 +10,15 @@ const BlocksHome = () => {
 
       return (
         <div className = "home">
-            {error && <div>{error}</div>}
+          <div class = "container">
+          <h2 class = "title">All Block Exchange Options</h2>
+          {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            <h1>All items</h1>
-            {blocks && <BlocksList blocks = {blocks} /> }
-      
-        </div>
+            
+            { blocks && <BlocksList blocks = {blocks}/>}
+            </div>
+            
+          </div>
       );
   }
   

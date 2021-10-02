@@ -11,6 +11,7 @@
   padding: 20px;
   flex: 1;
   text-align: right;
+  background-color: rgb(255, 238, 238);
 }
 
 .navbar .links {
@@ -21,7 +22,7 @@
 
 .navbar a {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .navbar a:hover {
   color: #f1356d;
@@ -34,134 +35,9 @@ a {
 p {
   color: #555;
 }
-.navbar {
-  background-color: rgb(255, 238, 238);
-}
 
-.header {
-  background-color: rgb(255, 238, 238);
-}
-
-.container {
-  max-width: 1400px;
-  margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  flex-wrap: flex;
-  justify-content: space-around;
-  padding-bottom: 30px;
-}
-
-.col-2 {
-  flex-basis: 50%;
-  min-width: 300px;
-  text-align: center;
-}
-
-li:hover {
-  text-shadow: 0 0 1px black;
-}
-
-.btn {
-  display: inline-block;
-  background: rgb(209, 48, 62);
-  color: white;
-  padding: 8px 30px;
-  margin: 30px 10px;
-  border-radius: 30px;
-  transition: background 0.5s;
-}
-
-.btn:hover {
-  background: rgb(116, 32, 39);
-}
-
-/* blog previews / list */
-.item-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
-}
-.item-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-}
-.item-preview h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 8px;
-}
-.item-preview a {
-  text-decoration: none;
-}
-
-/* market details page */
-.market-details h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 10px;
-}
-.market-details div {
-  margin: 20px 0;
-}
-.market-details button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* create new item form */
-.CreateItem {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.CreateItem label {
-  text-align: left;
-  display: block;
-  margin-bottom: 30px;
-}
-.CreateItem h2 {
-  font-size: 20px;
-  color: #f1356d;
-  margin-bottom: 30px;
-}
-.CreateItem input,
-.CreateItem textarea,
-.CreateItem select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-.CreateItem button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* */
-.confirmation button {
-  background: #f1356d;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-right: 20px;
-  margin-top: 10px;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -175,7 +51,7 @@ nav {
   text-align: right;
 }
 
-.navbar .links {
+nav ul {
   display: inline-right;
   list-style-type: none;
 }
@@ -192,6 +68,7 @@ a {
 p {
   color: #555;
 }
+
 .container {
   max-width: 1400px;
   margin: auto;
@@ -305,6 +182,7 @@ li:hover {
   position: relative;
   line-height: 60px;
   color: #555;
+  padding-top: 15px;
 }
 
 .title::after {
@@ -322,4 +200,23 @@ li:hover {
 h4 {
   color: #555;
   font-weight: bolder;
+}
+
+.market-details {
+  margin: 10px;
+  padding: 10px;
+}
+
+.items {
+  margin: 10px;
+  padding: 10px;
+}
+
+.createItem {
+  margin: 10px;
+  padding: 10px;
+}
+
+.block {
+  padding-bottom: 20px;
 }

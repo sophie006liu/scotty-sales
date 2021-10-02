@@ -26,7 +26,7 @@ const BlocksDetails = () => {
           <h3>Other places they are interested in: { block.place2 }, { block.place3 }</h3>
           <p>Posted by { block.author }, { block.school } </p>
           <p>Paying with: { block.body }</p> 
-          <button onClick={handleClick}> Meet around the block! </button>
+          <button class="btn" onClick={handleClick}> Meet around the block! </button>
         </article>
       )} 
         </div>
