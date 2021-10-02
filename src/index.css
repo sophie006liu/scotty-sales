@@ -23,6 +23,12 @@ body {
   color: #f1356d;
 }
 
+.content {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
 /* blog previews / list */
 .item-preview {
   padding: 10px 16px;
