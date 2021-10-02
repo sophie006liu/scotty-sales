@@ -3,7 +3,8 @@ import { useHistory } from "react-router-dom";
 
 const CreateItem = () => {
     const [title, setTitle] = useState('');
-    const [body, setBody] = useState('');
+    const [category, setCategory] = useState('');
+    const [price, setPrice] = useState('');
     const [author, setAuthor] = useState('');
     const [file, setFile] = useState('');
 
@@ -12,7 +13,7 @@ const CreateItem = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault(); //prevents page from refreshing
-        const marketable = { title, body, author, file };
+        const marketable = { title, category, price, author, file };
         console.log(marketable);
 
         fetch('http://localhost:8000/marketables/', {
@@ -24,6 +25,23 @@ const CreateItem = () => {
             console.log("added item")
         })
       }
+
+    const getBase64 = (file) => {
+    return new Promise((resolve,reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = error => reject(error);
+        reader.readAsDataURL(file);
+    });
+    }
+
+    const imageUpload = (e) => {
+        const file = e.target.files[0];
+        getBase64(file).then(base64 => {
+          setFile(base64);
+          console.debug("file stored",base64);
+        });
+    };
 
     return (
         <div className="createItem">
@@ -42,8 +60,8 @@ const CreateItem = () => {
                     <br></br>
                     <input
                     required
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
+                    value={price}
+                    onChange={(e) => setPrice(e.target.value)}
                     ></input>
                     <br></br>
                 <label>Blog author:</label>
@@ -54,7 +72,7 @@ const CreateItem = () => {
                     >
                 </input>
                 <br></br>
-                <input type="file" onChange={(e) => setFile(fileReader.readAsDataURL(e.target.files[0]))}/>
+                <input type="file" onChange={(e) => {imageUpload(e)}}/>
                 <img src={file}/>
                 <br></br>
                 <button>Add Listing</button>
