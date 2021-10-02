@@ -56,6 +56,17 @@ const CreateItem = () => {
                         onChange={(e) => setTitle(e.target.value)}
                     />
                     <br></br>
+                <label>Category:</label>
+                    <br></br>
+                    <select
+                        value={category}
+                        onChange={(e) => setCategory(e.target.value)}>
+                        <option value="">Choose a category:</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Bedroom">Bedroom</option>
+                        <option value="Living Spaces">Living Spaces</option>
+                        <option value="Miscellaneous">iscellaneous</option>
+                    </select>
                 <label>Price:</label>
                     <br></br>
                     <input

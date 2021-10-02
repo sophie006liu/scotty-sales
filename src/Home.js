@@ -4,8 +4,6 @@ import useFetch from './useFetch';
 
 const Home = () => {
     const {data: marketables, isPending, error} = useFetch('http://localhost:8000/marketables')
-
-
     const shopLink = "http://www.google.com"
     const loginLink = "http://www.google.com"
 

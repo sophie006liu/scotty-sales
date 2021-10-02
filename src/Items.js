@@ -19,7 +19,7 @@ const Items = () => {
               <h1>All items</h1>
               <select
                   value={filt}
-                  onChange={(e) => console.log((e.target.value))}>
+                  onChange={(e) => setFilt((e.target.value))}>
                   <option value="">Filter by:</option>
                   <option value="Low">Price: Low to High</option>
                   <option value="High">Price: High to Low</option>
