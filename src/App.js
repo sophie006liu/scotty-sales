@@ -4,9 +4,11 @@ import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import CreateItem from './CreateItem.js';
 import CreateBlock from './CreateBlock.js';
 import MarketDetails from './MarketDetails.js';
+import Items from './Items.js';
 import BlocksDetails from './BlocksDetails.js';
 import Confirmation from './Confirmation.js';
 import BlocksHome from './BlocksHome.js';
+
 
 function App() {
   return (
@@ -15,8 +17,11 @@ function App() {
           <Navbar/> 
           <div className = "content">
             <Switch> 
-              <Route exact path = "/"> 
+              <Route exact path = "/home"> 
                 <Home />
+              </Route>
+              <Route path = "/items"> 
+                <Items />
               </Route>
               <Route path = "/createItem"> 
                 <CreateItem />

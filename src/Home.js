@@ -7,7 +7,6 @@ const Home = () => {
     const [filt, setFilt] = useState('');
 
     const shopLink = "http://www.google.com"
-    const blocksLink = "http://www.google.com"
     const loginLink = "http://www.google.com"
 
         return (
@@ -28,8 +27,31 @@ const Home = () => {
               </select>
               {marketables && <MarketList marketables = {marketables} filt = {filt}/> }
 
+      return (
+        
+        <body>
+          <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+          <div className = "home">
+            <div class="row">
+          <div class="col-2">
+            <h1>Sell and buy from <br />CMU students!</h1>
+            <p>
+              Our website is only accessible for verified Carnegie <br />Mellon
+              students, so you can shop at ease.
+            </p>
+            <a href="products.html" class="btn"
+              >Explore Item Listings &#8594;</a
+            >
+            <a href="" class="btn">Block Exchange &#8594;</a>
           </div>
-        );
+        </div>
+        </div>
+        </body>
+        
+      );
   }
 
   export default Home;

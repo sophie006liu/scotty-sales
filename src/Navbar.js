@@ -4,22 +4,13 @@ const Navbar = () => {
 
     return (
         <nav className = "navbar">
-            <h1> CMU MarketPlace </h1>
+            <Link to ="/Home"><h1> CMU MarketPlace </h1></Link>
             <div className = "links">
-            <Link to = "/"> Home Shop </Link> 
-            <Link to = "/BlocksHome"> Blocks </Link>  
-            <Link to ="/CreateItem" style={{ 
-                color: 'white', 
-                backgroundColor: '#f1356d',
-                borderRadius: '8px' 
-                }}>New Shop Listing
-            </Link>
-            <Link to ="/CreateBlock" style={{ 
-                color: 'white', 
-                backgroundColor: '#f1356d',
-                borderRadius: '8px' 
-                }}>New Block Listing
-            </Link>
+            <Link to = "/Home"> Home </Link> 
+            <Link to = "/BlocksHome"> Blocks </Link>
+            <Link to = "/Items"> Items </Link> 
+            <Link to ="/CreateItem">Create Listing</Link>
+            <Link to ="/CreateBlock">New Block Listing</Link>
             </div>
         </nav>
     );
