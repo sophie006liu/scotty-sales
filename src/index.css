@@ -240,3 +240,11 @@ form {
 article {
   padding: 20px;
 }
+
+img {
+  max-height: 320px;
+}
+
+.item-preview {
+  padding-bottom: 30px;
+}

@@ -43,7 +43,7 @@ const Login = () => {
                         onChange={(e) => setPass(e.target.value)}
                     />
                 <br></br>
-                <button onClick={handleSubmit}>Login</button>
+                <button class="btn" onClick={handleSubmit}>Login</button>
             </form>
         </div>
       );
