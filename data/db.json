@@ -1,0 +1,40 @@
+{
+  "marketables": [
+    {
+      "title": "Bowl",
+      "body": "$3",
+      "author": "Student3",
+      "id": 3
+    },
+    {
+      "title": "s",
+      "body": "s",
+      "author": "s",
+      "id": 4
+    },
+    {
+      "title": "s",
+      "body": "s",
+      "author": "s",
+      "id": 5
+    },
+    {
+      "title": "d",
+      "body": "d",
+      "author": "d",
+      "id": 6
+    },
+    {
+      "title": "k",
+      "body": "k",
+      "author": "k",
+      "id": 7
+    },
+    {
+      "title": "h",
+      "body": "h",
+      "author": "h",
+      "id": 8
+    }
+  ]
+}
