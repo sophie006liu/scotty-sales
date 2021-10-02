@@ -34,6 +34,9 @@ a {
 p {
   color: #555;
 }
+body {
+  background-color: rgb(255, 238, 238);
+}
 
 .container {
   max-width: 1400px;
