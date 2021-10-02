@@ -248,3 +248,8 @@ img {
 .item-preview {
   padding-bottom: 30px;
 }
+
+.h1 {
+  padding-left: 30px;
+  margin-right: 0px;
+}

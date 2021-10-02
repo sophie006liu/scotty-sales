@@ -64,15 +64,15 @@ const Home = () => {
   <div class="small-container">
     <div class="row">
       <div class="col-b">
-        <h4>Block for Tsaocaa</h4>
+        <h4>Block at Hunan</h4>
         <p>Michelle Li</p>
       </div>
       <div class="col-b">
-        <h4>Block for Free</h4>
+        <h4>Block at LaPrima</h4>
         <p>Jonathan Ho</p>
       </div>
       <div class="col-b">
-        <h4>Block for Mentorship</h4>
+        <h4>Dinex at ABP</h4>
         <p>Stephanie Guan</p>
       </div>
     </div>
