@@ -12,7 +12,7 @@ const MarketDetails = () => {
       fetch('http://localhost:8000/marketables/' + marketable.id, {
         method: 'DELETE'
       }).then(() => {
-        history.push('/');
+        history.push('/Items');
       }) 
     }
 

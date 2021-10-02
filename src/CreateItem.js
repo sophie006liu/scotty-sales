@@ -67,6 +67,7 @@ const CreateItem = () => {
                         <option value="Living Spaces">Living Spaces</option>
                         <option value="Miscellaneous">iscellaneous</option>
                     </select>
+                    <br></br>
                 <label>Price:</label>
                     <br></br>
                     <input
