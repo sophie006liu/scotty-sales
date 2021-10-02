@@ -3,17 +3,25 @@ import { useHistory } from "react-router-dom";
 
 const CreateItem = () => {
     const [title, setTitle] = useState('');
-    const [body, setBody] = useState('');
+    const [category, setCategory] = useState('');
+    const [price, setPrice] = useState('');
     const [author, setAuthor] = useState('');
+<<<<<<< Updated upstream
     const [file, setFile] = useState('');
+=======
+>>>>>>> Stashed changes
 
     let history = useHistory();
     let fileReader = new FileReader();
 
     const handleSubmit = (e) => {
         e.preventDefault(); //prevents page from refreshing
+<<<<<<< Updated upstream
         const marketable = { title, body, author, file };
         console.log(marketable);
+=======
+        const marketable = { title, category, price, author };
+>>>>>>> Stashed changes
 
         fetch('http://localhost:8000/marketables/', {
             method: 'POST',
@@ -38,17 +46,31 @@ const CreateItem = () => {
                         onChange={(e) => setTitle(e.target.value)}
                     />
                     <br></br>
+                <label>Category</label>
+                    <br></br>
+                    <select 
+                        required 
+                        value={category} 
+                        onChange={(e) => setCategory(e.target.value)}>
+                        <option value="" selected>Choose a category</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Bedroom">Bedroom</option>
+                        <option value="Living Spaces">Living Spaces</option>
+                        <option value="Miscellaneous">Miscellaneous</option>
+                    </select>
+                    <br></br>
                 <label>Price:</label>
                     <br></br>
                     <input
                     required
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
+                    value={price}
+                    onChange={(e) => setPrice(e.target.value)}
                     ></input>
                     <br></br>
                 <label>Blog author:</label>
                     <br></br>
                     <input
+                    required
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                     >
