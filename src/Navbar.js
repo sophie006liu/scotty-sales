@@ -1,23 +1,16 @@
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    
-  const shopLink = "http://www.google.com"
-  const blocksLink = "http://www.google.com"
-  const loginLink = "http://www.google.com"
 
     return (
         <nav className = "navbar">
-            <h1> CMU MarketPlace </h1>
+            <Link to ="/Home"><h1> CMU MarketPlace </h1></Link>
             <div className = "links">
-            <Link to = "/"> Home </Link> 
-            <a href = {blocksLink}> Blocks </a> 
-            <Link to ="/CreateItem" style={{ 
-                color: 'white', 
-                backgroundColor: '#f1356d',
-                borderRadius: '8px' 
-                }}>New Listing
-            </Link>
+            <Link to = "/Home"> Home </Link> 
+            <Link to = "/BlocksHome"> Blocks </Link>
+            <Link to = "/Items"> Items </Link> 
+            <Link to ="/CreateItem">Create Listing</Link>
+            <Link to ="/CreateBlock">New Block Listing</Link>
             </div>
         </nav>
     );
