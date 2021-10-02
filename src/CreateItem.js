@@ -6,22 +6,14 @@ const CreateItem = () => {
     const [category, setCategory] = useState('');
     const [price, setPrice] = useState('');
     const [author, setAuthor] = useState('');
-<<<<<<< Updated upstream
     const [file, setFile] = useState('');
-=======
->>>>>>> Stashed changes
 
     let history = useHistory();
     let fileReader = new FileReader();
 
     const handleSubmit = (e) => {
         e.preventDefault(); //prevents page from refreshing
-<<<<<<< Updated upstream
-        const marketable = { title, body, author, file };
-        console.log(marketable);
-=======
-        const marketable = { title, category, price, author };
->>>>>>> Stashed changes
+        const marketable = { title, category, price, author, file };
 
         fetch('http://localhost:8000/marketables/', {
             method: 'POST',
