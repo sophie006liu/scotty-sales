@@ -4,7 +4,7 @@ const Navbar = () => {
 
     return (
         <nav className = "navbar">
-            <Link to ="/Home"><h1> CMU MarketPlace </h1></Link>
+            <Link to ="/home"><h1> CMU MarketPlace </h1></Link>
             <div className = "links">
             <Link to = "/BlocksHome"> Block Exchange </Link>
             <Link to = "/Items"> Items </Link> 
