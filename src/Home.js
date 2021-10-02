@@ -7,7 +7,6 @@ const Home = () => {
     const [filt, setFilt] = useState('');
 
     const shopLink = "http://www.google.com"
-    const blocksLink = "http://www.google.com"
     const loginLink = "http://www.google.com"
 
         return (
@@ -18,7 +17,7 @@ const Home = () => {
 
               <select
                   value={filt} 
-                  onChange={(e) => {console.log(e.target.value); setFilt(e.target.value)}}>
+                  onChange={(e) => setFilt(e.target.value)}>
                   <option value="">Filter by:</option>
                   <option value="Low">Price: Low to High</option>
                   <option value="High">Price: High to Low</option>
@@ -28,9 +27,8 @@ const Home = () => {
                   <option value="Miscellaneous">Category: Miscellaneous</option>
               </select>  
               {marketables && <MarketList marketables = {marketables} filt = {filt}/> }
-        
           </div>
-        );
+      );
   }
-  
+
   export default Home;

@@ -65,8 +65,7 @@ const CreateItem = () => {
                     required
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
-                    >
-                </input>
+                    > </input>
                 <br></br>
                 <input type="file" onChange={(e) => setFile(fileReader.readAsDataURL(e.target.files[0]))}/>
                 <img src={file}/>

@@ -1,0 +1,49 @@
+{
+  "blocks": [
+    {
+      "school": "MCS",
+      "place1": "LP",
+      "place2": "EU",
+      "place3": "HN",
+      "body": "Dinex",
+      "author": "Student2",
+      "id": 2
+    },
+    {
+      "school": "SCS",
+      "place1": "HN",
+      "place2": "EU",
+      "place3": "ABP",
+      "body": "Both",
+      "author": "Student3",
+      "id": 3
+    },
+    {
+      "school": "CIT",
+      "place1": "UG",
+      "place2": "BS",
+      "place3": "LP",
+      "body": "Block",
+      "author": "Student4",
+      "id": 4
+    },
+    {
+      "school": "SCS",
+      "place1": "UG",
+      "place2": "EX",
+      "place3": "IP",
+      "body": "i",
+      "author": "i",
+      "id": 5
+    },
+    {
+      "school": "CIT",
+      "place1": "a",
+      "place2": "b",
+      "place3": "c",
+      "body": "d",
+      "author": "e",
+      "id": 6
+    }
+  ]
+}
