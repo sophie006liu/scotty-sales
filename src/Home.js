@@ -14,6 +14,7 @@ const Home = () => {
       rel="stylesheet"
     />
           <div className = "home">
+            <div class="header">
             <div class= "container">
               <div class="row">
                 <div class="col-2">
@@ -27,6 +28,7 @@ const Home = () => {
                   </a>
                   <a href="/BlocksHome" class="btn">Block Exchange &#8594;</a>
                 </div>
+              </div>
               </div>
             </div>
             <div class="categories">

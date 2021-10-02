@@ -34,7 +34,11 @@ a {
 p {
   color: #555;
 }
-body {
+.navbar {
+  background-color: rgb(255, 238, 238);
+}
+
+.header {
   background-color: rgb(255, 238, 238);
 }
 
@@ -44,6 +48,7 @@ body {
   padding-left: 25px;
   padding-right: 25px;
 }
+
 .row {
   display: flex;
   align-items: center;
