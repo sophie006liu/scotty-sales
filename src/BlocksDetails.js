@@ -12,7 +12,7 @@ const BlocksDetails = () => {
       fetch('http://localhost:5000/blocks/' + block.id, {
         method: 'DELETE'
       }).then(() => {
-        history.push('/');
+        history.push('/Home');
       }) 
     }
 
