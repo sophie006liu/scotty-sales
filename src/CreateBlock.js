@@ -31,7 +31,7 @@ const CreateBlock = () => {
 
     return (
         <div className="createItem">
-            <h2 class="title">Add a new item</h2>
+            <h2 class="title">Add a New Block Offer</h2>
             <form onSubmit={handleSubmit}>
                 <label>School:</label>
                     <br></br>

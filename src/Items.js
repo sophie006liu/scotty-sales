@@ -13,11 +13,11 @@ const Items = () => {
     /* const handleClickAgain = (name) => {
         console.log('hello' + name);*/
         return (
+            
           <div className = "items">
-              {error && <div>{error}</div>}
-              
               <h2 class="title">All Items</h2>
-              
+              {error && <div>{error}</div>}
+              <div class = "stuff">
               <select
                   value={filt}
                   onChange={(e) => setFilt((e.target.value))}>
@@ -32,6 +32,8 @@ const Items = () => {
               {isPending && <div>Loading...</div>}
               {marketables && <MarketList marketables = {marketables} filt = {filt}/> }
               </div>
+              </div>
+              
       );
   }
   

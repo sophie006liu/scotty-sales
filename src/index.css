@@ -208,15 +208,35 @@ h4 {
 }
 
 .items {
-  margin: 10px;
-  padding: 10px;
+  margin: auto;
 }
 
 .createItem {
-  margin: 10px;
-  padding: 10px;
+  margin: auto;
 }
 
 .block {
   padding-bottom: 20px;
+}
+
+form {
+  align-items: center;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.market-list {
+  align-items: center;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.stuff {
+  align-items: center;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+article {
+  padding: 20px;
 }

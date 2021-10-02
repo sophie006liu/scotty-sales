@@ -10,6 +10,7 @@ const BlocksHome = () => {
 
       return (
         <div className = "home">
+      
           <div class = "container">
           <h2 class = "title">All Block Exchange Options</h2>
           {error && <div>{error}</div>}

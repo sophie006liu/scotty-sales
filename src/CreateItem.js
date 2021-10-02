@@ -45,7 +45,8 @@ const CreateItem = () => {
 
     return (
         <div className="createItem">
-            <h2 class="title">Add a new item</h2>
+            <h2 class="title">Add a New Item</h2>
+            <div class="item">
             <form onSubmit={handleSubmit}>
                 <label>Item name:</label>
                     <br></br>
@@ -89,6 +90,8 @@ const CreateItem = () => {
                 <br></br>
                 <button class = "btn">Add Listing</button>
             </form>
+            </div>
+            
         </div>
     );
 
