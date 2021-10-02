@@ -46,7 +46,7 @@ const Home = () => {
           <div class="col-3">
             <img src="images/featured/featured2.png" />
             <h4>Bean Bag</h4>
-            <p class="location">Carnegie Mellon</p>
+            <p class="location">Stever</p>
             <p>$30.00</p>
           </div>
           <div class="col-3">
