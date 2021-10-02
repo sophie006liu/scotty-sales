@@ -18,6 +18,7 @@ const Home = () => {
       rel="stylesheet"
     />
           <div className = "home">
+            <div class= "container">
             <div class="row">
           <div class="col-2">
             <h1>Sell and buy from <br />CMU students!</h1>
@@ -30,6 +31,7 @@ const Home = () => {
             >
             <a href="" class="btn">Block Exchange &#8594;</a>
           </div>
+        </div>
         </div>
         </div>
         </body>
