@@ -23,6 +23,7 @@ const MarketDetails = () => {
        { marketable && (
         <article>
           <h2>{ marketable.title }</h2>
+          <p> Price: ${marketable.price} </p>
           <p> Category: { marketable.category }</p>
           <p>Posted by { marketable.author }</p>
           <div>{ marketable.body }</div>

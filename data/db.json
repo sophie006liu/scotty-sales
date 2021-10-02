@@ -20,6 +20,13 @@
       "price": "1.00",
       "author": "sguan2",
       "id": 11
+    },
+    {
+      "title": "a",
+      "category": "Bedroom",
+      "price": "a",
+      "author": "a",
+      "id": 12
     }
   ]
 }

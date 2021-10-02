@@ -15,9 +15,10 @@ const Home = () => {
               {error && <div>{error}</div>}
               {isPending && <div>Loading...</div>}
               <h1>All items</h1>
+
               <select
                   value={filt} 
-                  onChange={(e) => console.log((e.target.value))}>
+                  onChange={(e) => {console.log(e.target.value); setFilt(e.target.value)}}>
                   <option value="">Filter by:</option>
                   <option value="Low">Price: Low to High</option>
                   <option value="High">Price: High to Low</option>
@@ -25,7 +26,7 @@ const Home = () => {
                   <option value="Bedroom">Category: Bedroom</option>
                   <option value="Living Spaces">Category: Living Spaces</option>
                   <option value="Miscellaneous">Category: Miscellaneous</option>
-              </select>
+              </select>  
               {marketables && <MarketList marketables = {marketables} filt = {filt}/> }
         
           </div>
