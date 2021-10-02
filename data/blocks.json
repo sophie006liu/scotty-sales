@@ -35,6 +35,15 @@
       "body": "i",
       "author": "i",
       "id": 5
+    },
+    {
+      "school": "CIT",
+      "place1": "a",
+      "place2": "b",
+      "place3": "c",
+      "body": "d",
+      "author": "e",
+      "id": 6
     }
   ]
 }
