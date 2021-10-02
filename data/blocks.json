@@ -1,15 +1,6 @@
 {
   "blocks": [
     {
-      "school": "MCS",
-      "place1": "LP",
-      "place2": "EU",
-      "place3": "HN",
-      "body": "Dinex",
-      "author": "Student2",
-      "id": 2
-    },
-    {
       "school": "SCS",
       "place1": "HN",
       "place2": "EU",
