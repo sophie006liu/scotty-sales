@@ -8,7 +8,7 @@ const Confirmation = () => {
         history.push('/createItem');
     }
     const clickGoHome = () => {
-        history.push('/');
+        history.push('/Items');
     }
 
     return (

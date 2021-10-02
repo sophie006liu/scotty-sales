@@ -3,7 +3,8 @@ import { useHistory } from "react-router-dom";
 
 const CreateItem = () => {
     const [title, setTitle] = useState('');
-    const [body, setBody] = useState('');
+    const [category, setCategory] = useState('');
+    const [price, setPrice] = useState('');
     const [author, setAuthor] = useState('');
     const [file, setFile] = useState('');
 
@@ -59,8 +60,8 @@ const CreateItem = () => {
                     <br></br>
                     <input
                     required
-                    value={body}
-                    onChange={(e) => setBody(e.target.value)}
+                    value={price}
+                    onChange={(e) => setPrice(e.target.value)}
                     ></input>
                     <br></br>
                 <label>Blog author:</label>
