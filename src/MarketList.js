@@ -7,6 +7,7 @@ const MarketList = ({marketables}) => {
             <div className="item-preview" key={marketable.id} >
               <Link to = {`/marketables/${marketable.id}`}>
               <h2>{ marketable.title }</h2>
+              <img src={marketable.file}></img>
               <p>Posted by { marketable.author }</p> 
               </Link>
             </div>

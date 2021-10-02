@@ -5,13 +5,15 @@ const CreateItem = () => {
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
-    //const history = useHistory;
+    const [file, setFile] = useState('');
 
     let history = useHistory();
+    let fileReader = new FileReader();
 
     const handleSubmit = (e) => {
         e.preventDefault(); //prevents page from refreshing
-        const marketable = { title, body, author };
+        const marketable = { title, body, author, file };
+        console.log(marketable);
 
         fetch('http://localhost:8000/marketables/', {
             method: 'POST',
@@ -52,8 +54,10 @@ const CreateItem = () => {
                     >
                 </input>
                 <br></br>
+                <input type="file" onChange={(e) => setFile(fileReader.readAsDataURL(e.target.files[0]))}/>
+                <img src={file}/>
                 <br></br>
-                 <button>Add Listing</button>
+                <button>Add Listing</button>
             </form>
         </div>
     );
