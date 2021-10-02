@@ -1,46 +1,25 @@
 {
   "marketables": [
     {
-      "title": "s",
-      "body": "s",
-      "author": "s",
-      "id": 4
-    },
-    {
-      "title": "s",
-      "body": "s",
-      "author": "s",
-      "id": 5
-    },
-    {
-      "title": "d",
-      "body": "d",
-      "author": "d",
-      "id": 6
-    },
-    {
-      "title": "k",
-      "body": "k",
-      "author": "k",
-      "id": 7
-    },
-    {
-      "title": "h",
-      "body": "h",
-      "author": "h",
-      "id": 8
-    },
-    {
-      "title": "d",
-      "body": "d",
-      "author": "d",
+      "title": "cow ottoman",
+      "category": "Living Spaces",
+      "price": "120.99",
+      "author": "sguan2",
       "id": 9
     },
     {
-      "title": "s",
-      "body": "s",
-      "author": "s",
+      "title": "epic food",
+      "category": "",
+      "price": "12381923",
+      "author": "sguan2",
       "id": 10
+    },
+    {
+      "title": "michelle",
+      "category": "Bedroom",
+      "price": "1.00",
+      "author": "sguan2",
+      "id": 11
     }
   ]
 }

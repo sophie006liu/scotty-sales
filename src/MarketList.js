@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 
-const MarketList = ({marketables}) => {
+const MarketList = ({marketables}, {filt}) => {
+  if (filt === "Kitchen") {
+    marketables = marketables.filter(a => a.category==="Kitchen");
+  }
+  else {
+    marketables.sort((a, b) => (a.category > b.category) ? 1 : -1);
+  }
     return (
       <div className="market-list">
         {marketables.map((marketable) =>(
