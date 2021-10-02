@@ -4,10 +4,11 @@ const Navbar = () => {
 
     return (
         <nav className = "navbar">
-            <Link to ="/Home"><h1> Scotty Sales </h1></Link>
             <div class="logo">
             <img src="images/logo.png" width="90px"/>
             </div>
+            <Link to ="/Home"><h1> Scotty Sales </h1></Link>
+            
 
             <div className = "links">
             <Link to = "/Items"> Items </Link> 
