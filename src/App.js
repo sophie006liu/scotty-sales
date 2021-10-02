@@ -1,3 +1,4 @@
+import Login from './Login.js';
 import Navbar from './Navbar.js';
 import Home from './Home.js';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
@@ -17,7 +18,13 @@ function App() {
           <Navbar/> 
           <div className = "content">
             <Switch> 
-              <Route exact path = "/home"> 
+              <Route exact path = "/"> 
+                <Login />
+              </Route>
+              <Route path = "/login"> 
+                <Login />
+              </Route>
+              <Route path = "/home"> 
                 <Home />
               </Route>
               <Route path = "/items"> 
@@ -29,7 +36,7 @@ function App() {
               <Route path = "/createBlock"> 
                 <CreateBlock />
               </Route>
-              <Route path = "/BlocksHome"> 
+              <Route path = "/blocksHome"> 
                 <BlocksHome />
               </Route>
               <Route path = "/marketables/:id"> 

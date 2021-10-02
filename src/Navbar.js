@@ -7,7 +7,8 @@ const Navbar = () => {
             <Link to ="/Home"><h1> Scotty Sales </h1></Link>
             <div class="logo">
             <img src="images/logo.png" width="90px"/>
-          </div>
+            </div>
+
             <div className = "links">
             <Link to = "/Items"> Items </Link> 
             <Link to = "/BlocksHome"> Block Exchange </Link>
