@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-
     return (
         <nav className = "navbar">
             <div class="logo">
@@ -9,7 +8,6 @@ const Navbar = () => {
             </div>
             <Link to ="/Home"><h1> Scotty Sales </h1></Link>
             
-
             <div className = "links">
             <Link to = "/Items"> Items </Link> 
             <Link to = "/BlocksHome"> Block Exchange </Link>

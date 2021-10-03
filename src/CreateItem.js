@@ -15,7 +15,6 @@ const CreateItem = () => {
     const handleSubmit = (e) => {
         e.preventDefault(); //prevents page from refreshing
         const marketable = { title, category, price, author, file };
-        console.log(marketable);
 
         fetch('http://localhost:8000/marketables/', {
             method: 'POST',
@@ -23,7 +22,6 @@ const CreateItem = () => {
             body : JSON.stringify(marketable)
         }).then(() => {
             history.push('/confirmation');
-            console.log("added item")
         })
       }
 
@@ -99,8 +97,7 @@ const CreateItem = () => {
                 <br></br>
                 <button class = "btn">Add Listing</button>
             </form>
-            </div>
-            
+            </div> 
         </div>
     );
 

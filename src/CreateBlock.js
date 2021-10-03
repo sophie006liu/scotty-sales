@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-
-
 const CreateBlock = () => {
     const [school, setSchool] = useState('');
     const [place1, setPlace1] = useState('');
@@ -17,7 +15,6 @@ const CreateBlock = () => {
     const handleSubmit = (e) => {
         e.preventDefault(); //prevents page from refreshing
         const block = { school, place1, place2, place3, body, author };
-        console.log(block);
 
         fetch('http://localhost:5000/blocks/', {
             method: 'POST',
@@ -25,7 +22,6 @@ const CreateBlock = () => {
             body : JSON.stringify(block)
         }).then(() => {
             history.push('/confirmation');
-            console.log("added item")
         })
       }
 

@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const MarketList = ({marketables, filt}) => {
-  console.log(filt);
-  console.log("why");
   if (filt === "Kitchen") {
     marketables = marketables.filter(a => a.category==="Kitchen");
   }
